@@ -1,12 +1,13 @@
 
-#1.路径: /add_item 添加事项
+1.路径: /add_item 添加事项
 ==============
-## **只支持post请求，post数据参数为**
+只支持post请求，post数据参数为
+--------------
 <br>
-### 1.content 代表事项内容
-### 2.status 代表事项状态，0表示待办，1表示已完成
-### 3.addtime 代表事项添加时间，格式为XXXX.XX.XX
-### 4.deadline 代表事项截止时间，格式同上
+1.content 代表事项内容
+2.status 代表事项状态，0表示待办，1表示已完成
+3.addtime 代表事项添加时间，格式为XXXX.XX.XX
+4.deadline 代表事项截止时间，格式同上
 <br>
 # 2.路径: /set_to_finished/<id> 将待办设为已完成
 ## **只支持put请求**
