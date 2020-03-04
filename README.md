@@ -67,10 +67,14 @@ id = x,删除id = x的事项
 未找到该id的事项时返回404
 <br>
 
-# 6.路径:del_item_by_instruction/<instruction> 删除指定类的事项
-##**只支持delete请求**
+6.路径:del_item_by_instruction/<instruction> 删除指定类的事项
+===
+只支持delete请求
+----
 <br>
-### instruction = "all" 时，删除所有事项的记录
-###instruction = "todo" 时，删除所有待办事项的记录
-###instruction = "finished" 时，删除所有已完成事项的记录
+instruction = "all" 时，删除所有事项的记录
+  <br>
+instruction = "todo" 时，删除所有待办事项的记录
+  <br>
+instruction = "finished" 时，删除所有已完成事项的记录
 <br>
