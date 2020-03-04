@@ -24,6 +24,7 @@ id = n（n>0）时,设置相应id 的事项为已完成
 <br>
 当该id的事项不存在时，返回404错误，终止程序
 <br>
+  
 3.路径:/get_item/<instruction>
 ====
 只支持get请求
@@ -39,21 +40,33 @@ instruction 不等于上面三个之一时，返回404错误，终止程序
   <br>
 查询数据包含在返回的字典中
 <br>
-#4.路径:get_count/<instruction> 获取事项个数
-##**只支持get请求**
+
+4.路径:get_count/<instruction> 获取事项个数
+=====
+只支持get请求
+---
 <br>
-### instruction = "all" 时，查询所有事项的个数
-### instruction = "todo" 时，查询所有待办事项的记录个数
-### instruction = "finished" 时，查询所有已完成事项的记录个数
-### 返回的int变量包含在data中
-### 否则返回405错误码
+instruction = "all" 时，查询所有事项的个数
+  <br>
+instruction = "todo" 时，查询所有待办事项的记录个数
+  <br>
+instruction = "finished" 时，查询所有已完成事项的记录个数
+  <br>
+返回的int变量包含在data中
+  <br>
+否则返回405错误码
 <br>
-#5.路径:del_item_by_id/<id> 删除指定id的事项
-##**只支持delete请求**
+  
+5.路径:del_item_by_id/<id> 删除指定id的事项
+=====
+只支持delete请求
+-----
 <br>
-### id = x,删除id = x的事项
-### 未找到该id的事项时返回404
+id = x,删除id = x的事项
 <br>
+未找到该id的事项时返回404
+<br>
+
 # 6.路径:del_item_by_instruction/<instruction> 删除指定类的事项
 ##**只支持delete请求**
 <br>
